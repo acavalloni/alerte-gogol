@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<script type="text/javascript"> 
+	var son = new Array(); 
+	son[0]='<embed src="gogol.mp3" hidden=true autostart=true loop=-0">'; 
+	son[1]='<embed src="moustache.mp3" hidden=true autostart=true loop=-0">'; 
+	function music(n) 
+	{ fond_musical.innerHTML=son[n]; } 
+</script> 
+</head> 
+
+<body style="margin:0; padding:0;">
+ 
+	<a href="#" onClick="music(0);">
+		<img src="bouton.jpg" style="width:350px; height=350px ; border:none; display:block; position:absolute; top:35%; left:15%;">
+		<p style="font-size:36px; width:350px; height=350px ; border:none; display:block; position:absolute; top:80%; left:23%;">Gogol !</p>
+	</a> 
+	
+	<a href="#" onClick="music(1);">
+		<img src="bouton.jpg" style="width:350px; height=350px ; border:none; display:block; position:absolute; top:35%; left:55%;">
+		<p style="font-size:36px; width:350px; height=350px ; border:none; display:block; position:absolute; top:80%; left:62%;">Moustache !</p>
+	</a> 
+	
+	<p style="font-family:arial; font-size:36px; text-align:center; font-weight:bold; border: 2px solid #000; background-color:#ccc;">
+		ALERTE AU GOGOL - RED BUTTON - KALACH KASH MOUSTACHE
+	</p>
+	<div id="fond_musical"></div> 
+</body> 
+</html>
